@@ -1,0 +1,43 @@
+# Timing data
+/data
+
+
+# Mac system files
+.DS_Store
+
+
+# Claude stuff
+.claude/
+
+# iCloud/Google Drive temp files
+.tmp.driveupload/
+
+# Trash and temporary directories
+.trash/
+.smart-env/
+
+# Python virtual environments
+*env/
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Backup files
+*.bak
+*~
+*.swp
+
+# Large Stuff
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.mov
+*.zip
+
+# Environment files
+.env
+.env.*
+
