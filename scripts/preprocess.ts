@@ -7,7 +7,7 @@
  * Run with: npm run preprocess
  */
 
-import { createReadStream, mkdirSync, writeFileSync, existsSync, readFileSync } from 'fs'
+import { mkdirSync, writeFileSync, existsSync, readFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -245,7 +245,6 @@ function generateOutputs() {
     .sort((a, b) => b.totalSeconds - a.totalSeconds)
 
   // Hourly patterns
-  const totalDays = dailyData.size
   const hourlyPatterns: HourlyPattern[] = Array.from({ length: 24 }, (_, hour) => {
     const data = hourlyData.get(hour)
     return {

@@ -1,6 +1,6 @@
 import type { DashboardData } from '../types'
 import { useFilters } from '../context/FilterContext'
-import { formatDuration, formatNumber } from '../lib/formatters'
+import { formatNumber } from '../lib/formatters'
 import { FilterBar } from './FilterBar'
 import { CalendarHeatmap } from './CalendarHeatmap'
 import { AppBreakdown } from './AppBreakdown'
@@ -11,9 +11,10 @@ import './Dashboard.css'
 
 interface DashboardProps {
   data: DashboardData
+  onClearData?: () => void
 }
 
-export function Dashboard({ data }: DashboardProps) {
+export function Dashboard({ data, onClearData }: DashboardProps) {
   const { filteredData } = useFilters()
 
   if (!filteredData) {
@@ -85,6 +86,11 @@ export function Dashboard({ data }: DashboardProps) {
         <p className="text-muted">
           Powered by Timing app data • {formatNumber(data.metadata.totalActivities)} activities tracked
         </p>
+        {onClearData && (
+          <button className="clear-data-btn" onClick={onClearData}>
+            Clear stored data
+          </button>
+        )}
       </footer>
     </div>
   )

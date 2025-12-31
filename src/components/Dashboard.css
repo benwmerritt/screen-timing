@@ -118,6 +118,24 @@
   font-size: 0.8125rem;
 }
 
+.clear-data-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-data-btn:hover {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+  background: rgba(248, 81, 73, 0.1);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .dashboard {

@@ -121,8 +121,6 @@ export function FilterProvider({ children, data }: FilterProviderProps) {
       .filter(day => day.totalSeconds > 0) // Remove days with no activity after device filter
 
     // Recalculate app totals from filtered daily data
-    const appMap = new Map<string, { totalSeconds: number; activityCount: number; devices: Record<string, number> }>()
-
     // We need to recalculate from raw data ideally, but for now we'll scale proportionally
     // This is a simplification - in production we'd want the raw data for accurate filtering
     const totalFilteredSeconds = filteredDaily.reduce((sum, d) => sum + d.totalSeconds, 0)

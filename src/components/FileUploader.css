@@ -1,0 +1,229 @@
+.uploader-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.uploader-content {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+.uploader-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.uploader-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.drop-zone {
+  background: var(--bg-secondary);
+  border: 2px dashed var(--border);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drop-zone:hover {
+  border-color: var(--accent-blue);
+  background: rgba(88, 166, 255, 0.05);
+}
+
+.drop-zone.dragging {
+  border-color: var(--accent-blue);
+  background: rgba(88, 166, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.drop-icon {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.drop-zone:hover .drop-icon,
+.drop-zone.dragging .drop-icon {
+  color: var(--accent-blue);
+}
+
+.drop-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.drop-hint {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.drop-hint code {
+  background: var(--bg-tertiary);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(248, 81, 73, 0.1);
+  border: 1px solid rgba(248, 81, 73, 0.3);
+  border-radius: 8px;
+  color: var(--accent-red);
+  font-size: 0.875rem;
+}
+
+.privacy-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(57, 211, 83, 0.05);
+  border: 1px solid rgba(57, 211, 83, 0.2);
+  border-radius: 8px;
+  color: var(--accent-green);
+  font-size: 0.8125rem;
+}
+
+.instructions {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+.instructions h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.instructions ol {
+  list-style: none;
+  counter-reset: steps;
+  padding: 0;
+}
+
+.instructions li {
+  counter-increment: steps;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.instructions li::before {
+  content: counter(steps);
+  position: absolute;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.instructions li strong {
+  color: var(--text-primary);
+}
+
+/* Processing state */
+.processing-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+}
+
+.processing-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent-blue);
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.processing-phase {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  margin-bottom: 0.5rem;
+}
+
+.processing-hint {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .uploader-container {
+    padding: 1rem;
+  }
+
+  .uploader-title {
+    font-size: 2rem;
+  }
+
+  .drop-zone {
+    padding: 2rem 1.5rem;
+  }
+}

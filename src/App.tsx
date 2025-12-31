@@ -1,16 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { Dashboard } from './components/Dashboard'
 import { LoadingScreen } from './components/LoadingScreen'
+import { FileUploader } from './components/FileUploader'
 import { FilterProvider } from './context/FilterContext'
+import { loadFromLocalStorage, clearLocalStorage } from './lib/processData'
 import type { DashboardData } from './types'
 
+type AppState = 'loading' | 'upload' | 'dashboard'
+
 function App() {
+  const [state, setState] = useState<AppState>('loading')
   const [data, setData] = useState<DashboardData | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    async function loadData() {
+    // First check localStorage
+    const storedData = loadFromLocalStorage()
+    if (storedData) {
+      setData(storedData)
+      setState('dashboard')
+      return
+    }
+
+    // Then try to load from public/data/processed (for local dev)
+    async function tryLoadProcessedData() {
       try {
         const [
           dailySummary,
@@ -20,7 +32,10 @@ function App() {
           monthlyTrends,
           metadata,
         ] = await Promise.all([
-          fetch('/data/processed/daily-summary.json').then(r => r.json()),
+          fetch('/data/processed/daily-summary.json').then(r => {
+            if (!r.ok) throw new Error('Not found')
+            return r.json()
+          }),
           fetch('/data/processed/app-totals.json').then(r => r.json()),
           fetch('/data/processed/device-totals.json').then(r => r.json()),
           fetch('/data/processed/hourly-patterns.json').then(r => r.json()),
@@ -36,51 +51,42 @@ function App() {
           monthlyTrends,
           metadata,
         })
-      } catch (err) {
-        setError('Failed to load data. Have you run the preprocessing script?')
-        console.error(err)
-      } finally {
-        setLoading(false)
+        setState('dashboard')
+      } catch {
+        // No processed data available, show upload screen
+        setState('upload')
       }
     }
 
-    loadData()
+    tryLoadProcessedData()
   }, [])
 
-  if (loading) {
+  const handleDataLoaded = useCallback((newData: DashboardData) => {
+    setData(newData)
+    setState('dashboard')
+  }, [])
+
+  const handleClearData = useCallback(() => {
+    clearLocalStorage()
+    setData(null)
+    setState('upload')
+  }, [])
+
+  if (state === 'loading') {
     return <LoadingScreen />
   }
 
-  if (error || !data) {
-    return (
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '100vh',
-        padding: '2rem',
-        textAlign: 'center',
-      }}>
-        <h1 style={{ marginBottom: '1rem' }}>Data Not Found</h1>
-        <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
-          {error || 'Please run the preprocessing script first:'}
-        </p>
-        <code style={{
-          background: 'var(--bg-secondary)',
-          padding: '1rem 2rem',
-          borderRadius: '8px',
-          fontFamily: 'monospace',
-        }}>
-          npm run preprocess
-        </code>
-      </div>
-    )
+  if (state === 'upload') {
+    return <FileUploader onDataLoaded={handleDataLoaded} />
+  }
+
+  if (!data) {
+    return <FileUploader onDataLoaded={handleDataLoaded} />
   }
 
   return (
     <FilterProvider data={data}>
-      <Dashboard data={data} />
+      <Dashboard data={data} onClearData={handleClearData} />
     </FilterProvider>
   )
 }

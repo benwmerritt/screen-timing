@@ -76,7 +76,7 @@ export function AppBreakdown({ data, limit = 10 }: AppBreakdownProps) {
       </div>
 
       <div className="app-list">
-        {topApps.map((app, i) => (
+        {topApps.map((app) => (
           <div key={app.application} className="app-row">
             <AppIcon name={app.application} size={28} />
             <span className="app-name">{app.application}</span>
