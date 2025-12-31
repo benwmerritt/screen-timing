@@ -1,0 +1,233 @@
+[
+  {
+    "month": "2023-04",
+    "totalSeconds": 599,
+    "activityCount": 39,
+    "avgSecondsPerDay": 120,
+    "activeDays": 5
+  },
+  {
+    "month": "2023-05",
+    "totalSeconds": 396888,
+    "activityCount": 16876,
+    "avgSecondsPerDay": 13230,
+    "activeDays": 30
+  },
+  {
+    "month": "2023-06",
+    "totalSeconds": 1057100,
+    "activityCount": 40590,
+    "avgSecondsPerDay": 35237,
+    "activeDays": 30
+  },
+  {
+    "month": "2023-07",
+    "totalSeconds": 709210,
+    "activityCount": 27665,
+    "avgSecondsPerDay": 22878,
+    "activeDays": 31
+  },
+  {
+    "month": "2023-08",
+    "totalSeconds": 722824,
+    "activityCount": 25068,
+    "avgSecondsPerDay": 24925,
+    "activeDays": 29
+  },
+  {
+    "month": "2023-09",
+    "totalSeconds": 957146,
+    "activityCount": 35323,
+    "avgSecondsPerDay": 31905,
+    "activeDays": 30
+  },
+  {
+    "month": "2023-10",
+    "totalSeconds": 669801,
+    "activityCount": 21208,
+    "avgSecondsPerDay": 21606,
+    "activeDays": 31
+  },
+  {
+    "month": "2023-11",
+    "totalSeconds": 623763,
+    "activityCount": 20946,
+    "avgSecondsPerDay": 20792,
+    "activeDays": 30
+  },
+  {
+    "month": "2023-12",
+    "totalSeconds": 641432,
+    "activityCount": 20254,
+    "avgSecondsPerDay": 20691,
+    "activeDays": 31
+  },
+  {
+    "month": "2024-01",
+    "totalSeconds": 983084,
+    "activityCount": 26899,
+    "avgSecondsPerDay": 31712,
+    "activeDays": 31
+  },
+  {
+    "month": "2024-02",
+    "totalSeconds": 813760,
+    "activityCount": 24852,
+    "avgSecondsPerDay": 28061,
+    "activeDays": 29
+  },
+  {
+    "month": "2024-03",
+    "totalSeconds": 852481,
+    "activityCount": 19134,
+    "avgSecondsPerDay": 27499,
+    "activeDays": 31
+  },
+  {
+    "month": "2024-04",
+    "totalSeconds": 1056628,
+    "activityCount": 21520,
+    "avgSecondsPerDay": 35221,
+    "activeDays": 30
+  },
+  {
+    "month": "2024-05",
+    "totalSeconds": 844771,
+    "activityCount": 22891,
+    "avgSecondsPerDay": 27251,
+    "activeDays": 31
+  },
+  {
+    "month": "2024-06",
+    "totalSeconds": 659974,
+    "activityCount": 21569,
+    "avgSecondsPerDay": 21999,
+    "activeDays": 30
+  },
+  {
+    "month": "2024-07",
+    "totalSeconds": 1034181,
+    "activityCount": 32829,
+    "avgSecondsPerDay": 33361,
+    "activeDays": 31
+  },
+  {
+    "month": "2024-08",
+    "totalSeconds": 687396,
+    "activityCount": 18267,
+    "avgSecondsPerDay": 25459,
+    "activeDays": 27
+  },
+  {
+    "month": "2024-09",
+    "totalSeconds": 811611,
+    "activityCount": 24981,
+    "avgSecondsPerDay": 27054,
+    "activeDays": 30
+  },
+  {
+    "month": "2024-10",
+    "totalSeconds": 809423,
+    "activityCount": 50557,
+    "avgSecondsPerDay": 28908,
+    "activeDays": 28
+  },
+  {
+    "month": "2024-11",
+    "totalSeconds": 807108,
+    "activityCount": 66351,
+    "avgSecondsPerDay": 26904,
+    "activeDays": 30
+  },
+  {
+    "month": "2024-12",
+    "totalSeconds": 1028492,
+    "activityCount": 40848,
+    "avgSecondsPerDay": 33177,
+    "activeDays": 31
+  },
+  {
+    "month": "2025-01",
+    "totalSeconds": 1140196,
+    "activityCount": 47538,
+    "avgSecondsPerDay": 36781,
+    "activeDays": 31
+  },
+  {
+    "month": "2025-02",
+    "totalSeconds": 1021380,
+    "activityCount": 50781,
+    "avgSecondsPerDay": 36478,
+    "activeDays": 28
+  },
+  {
+    "month": "2025-03",
+    "totalSeconds": 1235083,
+    "activityCount": 38823,
+    "avgSecondsPerDay": 39841,
+    "activeDays": 31
+  },
+  {
+    "month": "2025-04",
+    "totalSeconds": 724705,
+    "activityCount": 30071,
+    "avgSecondsPerDay": 26841,
+    "activeDays": 27
+  },
+  {
+    "month": "2025-05",
+    "totalSeconds": 695477,
+    "activityCount": 46084,
+    "avgSecondsPerDay": 24838,
+    "activeDays": 28
+  },
+  {
+    "month": "2025-06",
+    "totalSeconds": 570931,
+    "activityCount": 29508,
+    "avgSecondsPerDay": 24823,
+    "activeDays": 23
+  },
+  {
+    "month": "2025-07",
+    "totalSeconds": 1563925,
+    "activityCount": 101550,
+    "avgSecondsPerDay": 50449,
+    "activeDays": 31
+  },
+  {
+    "month": "2025-08",
+    "totalSeconds": 1531302,
+    "activityCount": 64981,
+    "avgSecondsPerDay": 49397,
+    "activeDays": 31
+  },
+  {
+    "month": "2025-09",
+    "totalSeconds": 1439642,
+    "activityCount": 86359,
+    "avgSecondsPerDay": 47988,
+    "activeDays": 30
+  },
+  {
+    "month": "2025-10",
+    "totalSeconds": 1668409,
+    "activityCount": 73535,
+    "avgSecondsPerDay": 53820,
+    "activeDays": 31
+  },
+  {
+    "month": "2025-11",
+    "totalSeconds": 1284958,
+    "activityCount": 56943,
+    "avgSecondsPerDay": 42832,
+    "activeDays": 30
+  },
+  {
+    "month": "2025-12",
+    "totalSeconds": 1243244,
+    "activityCount": 55760,
+    "avgSecondsPerDay": 40105,
+    "activeDays": 31
+  }
+]

@@ -1,5 +1,13 @@
-# Timing data
-/data
+# Timing data (large export files)
+/data/*.json
+/data/*.csv
+/data/*.html
+/data/*.xlsx
+
+# Node
+node_modules/
+dist/
+*.local
 
 
 # Mac system files

@@ -1,0 +1,146 @@
+[
+  {
+    "hour": 0,
+    "totalSeconds": 1263133,
+    "activityCount": 53845,
+    "avgSecondsPerDay": 2018
+  },
+  {
+    "hour": 1,
+    "totalSeconds": 1499425,
+    "activityCount": 68774,
+    "avgSecondsPerDay": 2151
+  },
+  {
+    "hour": 2,
+    "totalSeconds": 1631844,
+    "activityCount": 77069,
+    "avgSecondsPerDay": 2229
+  },
+  {
+    "hour": 3,
+    "totalSeconds": 1738356,
+    "activityCount": 79665,
+    "avgSecondsPerDay": 2375
+  },
+  {
+    "hour": 4,
+    "totalSeconds": 1773048,
+    "activityCount": 84857,
+    "avgSecondsPerDay": 2399
+  },
+  {
+    "hour": 5,
+    "totalSeconds": 1884688,
+    "activityCount": 82583,
+    "avgSecondsPerDay": 2493
+  },
+  {
+    "hour": 6,
+    "totalSeconds": 1925482,
+    "activityCount": 82380,
+    "avgSecondsPerDay": 2491
+  },
+  {
+    "hour": 7,
+    "totalSeconds": 1962384,
+    "activityCount": 80575,
+    "avgSecondsPerDay": 2539
+  },
+  {
+    "hour": 8,
+    "totalSeconds": 1921941,
+    "activityCount": 78076,
+    "avgSecondsPerDay": 2549
+  },
+  {
+    "hour": 9,
+    "totalSeconds": 1972081,
+    "activityCount": 78680,
+    "avgSecondsPerDay": 2676
+  },
+  {
+    "hour": 10,
+    "totalSeconds": 2054923,
+    "activityCount": 79797,
+    "avgSecondsPerDay": 2766
+  },
+  {
+    "hour": 11,
+    "totalSeconds": 1969631,
+    "activityCount": 79267,
+    "avgSecondsPerDay": 2739
+  },
+  {
+    "hour": 12,
+    "totalSeconds": 1908803,
+    "activityCount": 67225,
+    "avgSecondsPerDay": 2778
+  },
+  {
+    "hour": 13,
+    "totalSeconds": 1566084,
+    "activityCount": 50894,
+    "avgSecondsPerDay": 2709
+  },
+  {
+    "hour": 14,
+    "totalSeconds": 1200748,
+    "activityCount": 38242,
+    "avgSecondsPerDay": 2786
+  },
+  {
+    "hour": 15,
+    "totalSeconds": 742642,
+    "activityCount": 28520,
+    "avgSecondsPerDay": 2710
+  },
+  {
+    "hour": 16,
+    "totalSeconds": 397676,
+    "activityCount": 21001,
+    "avgSecondsPerDay": 2272
+  },
+  {
+    "hour": 17,
+    "totalSeconds": 299069,
+    "activityCount": 16118,
+    "avgSecondsPerDay": 2283
+  },
+  {
+    "hour": 18,
+    "totalSeconds": 229478,
+    "activityCount": 12614,
+    "avgSecondsPerDay": 2318
+  },
+  {
+    "hour": 19,
+    "totalSeconds": 213777,
+    "activityCount": 13181,
+    "avgSecondsPerDay": 1979
+  },
+  {
+    "hour": 20,
+    "totalSeconds": 211385,
+    "activityCount": 12936,
+    "avgSecondsPerDay": 1807
+  },
+  {
+    "hour": 21,
+    "totalSeconds": 359186,
+    "activityCount": 15746,
+    "avgSecondsPerDay": 1350
+  },
+  {
+    "hour": 22,
+    "totalSeconds": 631187,
+    "activityCount": 23332,
+    "avgSecondsPerDay": 1551
+  },
+  {
+    "hour": 23,
+    "totalSeconds": 929953,
+    "activityCount": 35223,
+    "avgSecondsPerDay": 1713
+  }
+]

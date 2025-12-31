@@ -1,0 +1,83 @@
+.app-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pie-container {
+  width: 100%;
+  min-height: 200px;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.app-row {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.625rem 0.75rem;
+  margin: 0 -0.75rem;
+  border-radius: 10px;
+  transition: background 0.15s ease;
+}
+
+.app-row:hover {
+  background: var(--bg-tertiary);
+}
+
+.app-name {
+  flex: 1;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-primary);
+}
+
+.app-time {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.app-percent {
+  font-size: 0.8125rem;
+  width: 50px;
+  text-align: right;
+  color: var(--text-muted);
+}
+
+/* Tooltip styles */
+.chart-tooltip {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.875rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.tooltip-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.25rem 0;
+  color: var(--text-secondary);
+}
+
+.tooltip-row span:last-child {
+  color: var(--text-primary);
+  font-weight: 500;
+}

@@ -1,0 +1,35 @@
+.time-patterns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chart-container {
+  width: 100%;
+  min-height: 200px;
+}
+
+.peak-hours {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.peak-label {
+  font-size: 0.875rem;
+}
+
+.peak-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.peak-badge {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+}

@@ -1,0 +1,25 @@
+.trend-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trend-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.trend-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
